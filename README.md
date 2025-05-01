@@ -1,6 +1,6 @@
 # torchmm
 
-torch cuda matmul extention for integral. 50x SpeedUp
+torch cuda matmul extension for integral. 50x SpeedUp
 
 ## Example
 
@@ -24,7 +24,8 @@ python setup.py bdist_wheel
 ```
 
 ```shell
-pip install dist/*.whl
+# depend on your python version and os platform
+pip install dist/torchmm-1.0.0-cp39-cp39-win_amd64.whl
 ```
 
 ## BanchMark

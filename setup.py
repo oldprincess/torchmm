@@ -13,8 +13,8 @@ else:
 setup(
     name="torchmm",
     version="1.0.0",
-    description="torch cuda matmul extention for integral",
-    long_description=open("README.md", "r").read(),
+    description="torch cuda matmul extension for integral",
+    long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     author="oldprincess",
     author_email="zirui.gong@foxmail.com",

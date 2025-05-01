@@ -183,17 +183,17 @@ import sys
 
 cxx_flags = []
 if sys.platform == "linux":
-    cxx_flags = ["-std=C++17", "-O3"]
-    nvcc_flags = ["-O3", "-std=C++17"]
+    cxx_flags = ["-std=c++17", "-O3"]
+    nvcc_flags = ["-O3", "-std=c++17"]
 else:
-    cxx_flags = ["/std:C++17", "/O2", "/Zc:__cplusplus"]
-    nvcc_flags = ["-O3", "-std=C++17", "-Xcompiler", "/Zc:__cplusplus"]
+    cxx_flags = ["/std:c++17", "/O2", "/Zc:__cplusplus"]
+    nvcc_flags = ["-O3", "-std=c++17", "-Xcompiler", "/Zc:__cplusplus"]
 
 setup(
     name="torchmm",
     version="1.0.0",
-    description="torch cuda matmul extention for integral",
-    long_description=open("README.md", "r").read(),
+    description="torch cuda matmul extension for integral",
+    long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     author="oldprincess",
     author_email="zirui.gong@foxmail.com",
