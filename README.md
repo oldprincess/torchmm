@@ -4,6 +4,8 @@
 
 A CUDA matrix multiplication extension for integer types for PyTorch, with a 50x speed up.
 
+* 针对PyTorch框架不支持整数类型的矩阵乘法的问题，采用了NVIDIA的cutlass库进行加速，并通过PyTorch的C++ API实现了优化代码与PyTorch框架的集成。相较于PyTorch中默认的CPU实现，优化后实现了50倍的速度提升。
+
 ## Example
 
 ```python
@@ -32,11 +34,11 @@ pip install dist/torchmm-1.0.0-cp39-cp39-win_amd64.whl
 
 ## BanchMark
 
-- OS：Windows 11
-- Python：3.9
-- NVCC Version: 12.6
-- CPU：i5-12500H
-- GPU：RTX 3050
+* OS：Windows 11
+* Python：3.9
+* NVCC Version: 12.6
+* CPU：i5-12500H
+* GPU：RTX 3050
 
 ```text
 +-------------------------+-------------+-----------+-----------------+------------------+---------+
