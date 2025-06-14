@@ -1,6 +1,8 @@
 # torchmm
 
-torch cuda matmul extension for integral. 50x SpeedUp
+为PyTorch整数类型开发的矩阵乘法GPU加速扩展，速度提高50倍。
+
+A CUDA matrix multiplication extension for integer types for PyTorch, with a 50x speed up.
 
 ## Example
 

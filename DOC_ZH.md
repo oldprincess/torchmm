@@ -16,7 +16,7 @@ print(torch.matmul(mat1, mat2))
 为了解决上述问题，本文使用如下技术编写 torchmm 库，为 PyTorch 提供整数矩阵乘法加速计算：
 
 1. 利用 NVIDIA 的 CUTLASS 库实现整数 GEMM 的 GPU 加速计算
-2. 利用 torch extention实现C++和PyTorch的相互调用
+2. 利用 torch extention 实现 C++ 和 PyTorch 的相互调用
 3. 利用 pybind11 库封装 python 模块
 
 torchmm 库的示例代码如下：
