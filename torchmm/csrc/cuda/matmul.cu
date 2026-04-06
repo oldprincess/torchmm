@@ -1,4 +1,5 @@
 #include <c10/cuda/CUDAStream.h>
+#include <torch/types.h>
 #include <cutlass/cutlass.h>
 #include <cutlass/gemm/device/gemm_batched.h>
 
@@ -114,3 +115,5 @@ torch::Tensor& i_bmm(const torch::Tensor& in1,
 }
 
 } // namespace torchmm::cuda
+
+

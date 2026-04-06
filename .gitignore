@@ -2,6 +2,14 @@
 build/*
 dist/*
 torchmm.egg-info/*
+.torch_extensions/
+torchmm/_C*.pyd
 *.exe
 *.lib
 *.exp
+.pytest_cache/
+*.py[cod]
+*.pyo
+*.pyd
+**/__pycache__/
+.venv/*

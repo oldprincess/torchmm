@@ -1,6 +1,27 @@
 import functools
 import torch
-from torchmm._C import *
+
+try:
+    from torchmm._C import *  # type: ignore[F401,F403]
+except ModuleNotFoundError:
+    pass
+
+from torchmm.wide import (
+    WideTensor,
+    wide_add,
+    wide_sub,
+    wide_mul,
+    wide_neg,
+    wide_shl,
+    wide_shr,
+    wide_bmm,
+    wide_eq,
+    wide_ge,
+    wide_le,
+    wide_gt,
+    wide_lt,
+)
+from torchmm.utils import ints_to_limb_tensor, limb_tensor_to_ints
 
 
 def matmul(

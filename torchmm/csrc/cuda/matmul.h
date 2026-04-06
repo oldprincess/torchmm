@@ -1,7 +1,7 @@
 #ifndef TORCHMM_SCRS_CUDA_MATMUL_H
 #define TORCHMM_SCRS_CUDA_MATMUL_H
 
-#include <torch/extension.h>
+#include <torch/types.h>
 
 namespace torchmm::cuda {
 
@@ -12,3 +12,5 @@ torch::Tensor& i_bmm(const torch::Tensor& in1,
 }; // namespace torchmm::cuda
 
 #endif
+
+
